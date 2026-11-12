@@ -1,0 +1,11 @@
+{
+  "name": "vantage-compliance-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vantage Environmental Compliance Calendar — shared task tracking with site-level edit rights and a live on-time KPI dashboard",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@netlify/blobs": "^10.0.0"
+  }
+}

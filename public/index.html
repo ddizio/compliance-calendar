@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Environmental Compliance Calendar · Vantage</title>
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="logo.jpg" alt="Vantage" class="logo">
+    <div class="brand-text">
+      <div class="app-name">Environmental Compliance Calendar</div>
+      <div class="app-sub">Environment &amp; Sustainability</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <label class="year-pick">Year <select id="yearSelect"></select></label>
+    <div class="live" id="liveStatus" title="The page checks for changes every 15 seconds"><span class="dot"></span><span id="liveText">Connecting…</span></div>
+    <button class="btn btn-ghost" id="userBtn">Sign in to edit</button>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-view="dashboard" role="tab">Dashboard</button>
+  <button class="tab" data-view="list" role="tab">Task list</button>
+  <button class="tab" data-view="calendar" role="tab">Calendar</button>
+</nav>
+
+<main>
+  <section id="view-dashboard" class="view"></section>
+  <section id="view-list" class="view" hidden></section>
+  <section id="view-calendar" class="view" hidden></section>
+</main>
+
+<div id="modalRoot"></div>
+<div id="tooltip" class="tooltip" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
